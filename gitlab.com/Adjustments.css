@@ -1,0 +1,72 @@
+
+
+/* Merge requests */
+
+body[data-page="projects:merge_requests:show"]
+div.diff-file div.gl-text-center.collapsed-file-warning {
+	display: none;
+}
+
+body[data-page="projects:merge_requests:show"]
+.diff-file .file-title svg.diff-toggle-caret,
+body[data-page="projects:merge_requests:show"]
+.diff-file .file-title-flex-parent svg.diff-toggle-caret {
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+}
+
+body[data-page="projects:merge_requests:show"]
+.diff-file .file-title svg.diff-toggle-caret:hover,
+body[data-page="projects:merge_requests:show"]
+.diff-file .file-title-flex-parent svg.diff-toggle-caret:hover {
+	background: #eee;
+}
+
+body[data-page="projects:merge_requests:show"]
+.diff-files-holder div.file-actions div.btn-group button.btn.js-btn-vue-toggle-comments {
+	margin-right: 10px;
+}
+
+/* Repository > Compare */
+
+body[data-page="projects:compare:show"]
+div.diff-file.file-holder > div.diff-content > div.nothing-here-block.diff-collapsed {
+	display: none;
+}
+
+body[data-page="projects:compare:show"]
+div.file-title-flex-parent.is-compare.js-file-title > div.file-header-content > i.diff-toggle-caret {
+	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 0.18);
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	vertical-align: middle;
+	padding-top: 5px;
+}
+
+body[data-page="projects:compare:show"]
+div.file-title-flex-parent.is-compare.js-file-title > div.file-header-content > i.diff-toggle-caret:hover {
+	background: #eee;
+}
+
+div.right-sidebar-collapsed .limit-container-width.container-limited,
+div.right-sidebar-collapsed .detail-page-description,
+div.right-sidebar-collapsed .limit-container-width .issuable-details .detail-page-description,
+div.right-sidebar-collapsed .limit-container-width .issuable-details .mr-source-target,
+div.right-sidebar-collapsed .limit-container-width .issuable-details .mr-state-widget,
+div.right-sidebar-collapsed .limit-container-width .issuable-details .merge-manually,
+div.right-sidebar-collapsed .limit-container-width .merge-request-tabs-container,
+div.right-sidebar-collapsed .limit-container-width .epic-tabs-container,
+div.right-sidebar-collapsed .limit-container-width .detail-page-header,
+div.right-sidebar-collapsed .limit-container-width .page-content-header,
+div.right-sidebar-collapsed .limit-container-width .commit-box,
+div.right-sidebar-collapsed .limit-container-width .info-well,
+div.right-sidebar-collapsed .limit-container-width .commit-ci-menu,
+div.right-sidebar-collapsed .limit-container-width .files-changed-inner,
+div.right-sidebar-collapsed .limit-container-width .limited-header-width,
+div.right-sidebar-collapsed .limit-container-width .limited-width-notes {
+	max-width: 10000px;
+}
